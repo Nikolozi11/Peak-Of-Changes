@@ -1,83 +1,80 @@
 
 /*textebi*/
-.textcont {
-    
-  max-width: 800px;
-  margin: 0 auto;
-    text-align: center;
-}
-
+/* === Default სტილები კომპიუტერზე (არ შეცვლილა) === */
 .h1 {
-    position: absolute;
-    bottom: 450px; /* ან top, center, რაც გინდა */
-    right: 800px;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    font-size: 60px;
-    display: inline-block;
-    text-shadow:
+  position: absolute;
+  bottom: 450px;
+  right: 800px;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 60px;
+  display: inline-block;
+  text-shadow:
     0 0 10px cyan,
     0 0 20px cyan,
     0 0 40px cyan;
 }
 
-@media (max-width: 768px) {
-  .h1 {
-    bottom: 20px;
-    right: 20px;
-    font-size: 30px;
-    text-align: right;
-  }
-
-  .h1 {
-    position: absolute; 
-    bottom: 800px; /* ან top, center, რაც გინდა */
-    right: 180px;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    font-size: 40px;
-    display: inline-block;
-    text-shadow:
-    0 0 10px cyan,
-    0 0 20px cyan,
-    0 0 40px cyan;
-}
-}
-
-
-/*baneri*/
+/* ბანერი */
 header {
-    background-color: gray;
-    border-bottom:  5px solid black ;
+  background-color: gray;
+  border-bottom: 5px solid black;
 }
 
 .banerimg {
-    text-align: center;
+  text-align: center;
 }
 
 .baner {
-    z-index: 0;
-    float: right;
-    margin-left: 20px;
-    max-width: 100%;
-    height: auto;
-    width: 40%;
-    display: inline-block;
+  z-index: 0;
+  float: right;
+  margin-left: 20px;
+  max-width: 100%;
+  height: auto;
+  width: 40%;
+  display: inline-block;
 }
 
+/* === Media Queries — მხოლოდ მცირე ზომებისთვის === */
 @media (max-width: 768px) {
-  .right-photo {
-    float: none;
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .textcont {
+    flex: 1;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  .h1 {
+    position: static;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .banerimg {
+    flex: 1;
+    text-align: right;
+    box-sizing: border-box;
+  }
+
+  .baner {
+    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     display: block;
-    margin: 20px auto;
+    object-fit: cover;
   }
 }
+
 
 /*footer*/
 :root {
@@ -171,3 +168,7 @@ footer {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+
+
+/*mobile*/
