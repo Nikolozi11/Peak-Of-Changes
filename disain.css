@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 /*textebi*/
 .h1 {
@@ -35,6 +38,48 @@ header {
   height: auto;
   width: 40%;
   display: inline-block;
+}
+
+/*nav board*/
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 10px;
+}
+
+.nav-bar {
+  background-color: black;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: rgb(2, 255, 255);
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
 }
 
 /*footer*/
@@ -176,5 +221,24 @@ footer {
     height: auto;
     display: block;
     object-fit: cover;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin-bottom: 10px;
   }
 }
