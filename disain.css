@@ -94,7 +94,7 @@ header {
   display: inline-block;
   bordr: 3px solid rgb(2, 255, 255);
   box-shadow: 0px 0px 20px rgb(2, 255, 255),
-        0px 0px 20px rgb(2, 255, 255) inset;
+    0px 0px 20px rgb(2, 255, 255) inset;
   padding-bottom: 20px;
 }
 
@@ -133,9 +133,11 @@ header {
 /*mizani*/
 .news-contents {
   max-width: 900px;
-  width: 90%; /* ან width: 100% */
+  width: 90%;
+  /* ან width: 100% */
   margin: 40px auto;
-  padding: 20px; /* დამატებითი შესვენება */
+  padding: 20px;
+  /* დამატებითი შესვენება */
   background: white;
   border-radius: 12px;
   box-shadow: 0 12px 35px rgb(2, 255, 255);
@@ -151,7 +153,7 @@ header {
   display: inline-block;
 }
 
-.in  {
+.in {
   padding: 20px;
 }
 
@@ -172,92 +174,94 @@ header {
 }
 
 /*gazeti*/
-  .news-card {
-    margin: auto;
-    margin-top: 40px;
-      display: flex;
-      flex-direction: row;
-      background: #fff;
-      max-width: 900px;
-      width: 100%;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 20px rgb(2, 255, 255);
-    }
+.news-card {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgb(2, 255, 255);
+}
 
-    .news-image {
-      flex: 1;
-      max-width: 350px; /* ფოტოს მაქსიმალური სიგანე */
-      background: white;
-    }
+.news-image {
+  flex: 1;
+  max-width: 350px;
+  /* ფოტოს მაქსიმალური სიგანე */
+  background: white;
+}
 
-    .news-image img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      display: block;
-      background: white;
-    }
+.news-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: white;
+}
 
-    .news-content {
-      flex: 2;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
+.news-content {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-    .news-title {
-      font-size: 1.6rem;
-      color: #333;
-      margin-bottom: 10px;
-    }
+.news-title {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-    .news-desc {
-      color: #555;
-      font-size: 1rem;
-      max-height: 4.5em;
-      overflow: hidden;
-      transition: max-height 0.4s ease;
-      line-height: 1.5;
-    }
+.news-desc {
+  color: #555;
+  font-size: 1rem;
+  max-height: 4.5em;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  line-height: 1.5;
+}
 
-    .news-desc.expanded {
-      max-height: 1000px;
-    }
+.news-desc.expanded {
+  max-height: 1000px;
+}
 
-    .read-more-btn {
-      margin-top: 10px; /* ღილაკი ახლოს ტექსტთან */
-      padding: 10px 20px;
-      border: none;
-      background: #007bff;
-      color: #fff;
-      border-radius: 30px;
-      cursor: pointer;
-      font-size: 1rem;
-      align-self: flex-start;
-    }
+.read-more-btn {
+  margin-top: 10px;
+  /* ღილაკი ახლოს ტექსტთან */
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  align-self: flex-start;
+}
 
-    /* მობილური */
-    @media (max-width: 768px) {
-      .news-contents {
+/* მობილური */
+@media (max-width: 768px) {
+  .news-contents {
     max-width: 100%;
     margin: 10px;
     padding: 15px;
   }
 
-      .news-card {
-        flex-direction: column;
-      }
+  .news-card {
+    flex-direction: column;
+  }
 
-      .news-image {
-        max-width: 100%;
-      }
+  .news-image {
+    max-width: 100%;
+  }
 
-      .news-content {
-        padding: 15px;
-      }
-    }
+  .news-content {
+    padding: 15px;
+  }
+}
 
 /*footer*/
 :root {
@@ -272,7 +276,8 @@ header {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -286,11 +291,13 @@ html, body {
 footer {
   margin-top: 40px;
   background: #000;
-  height: 50vh; /* ნახევარი ეკრანის სიმაღლე */
+  height: 50vh;
+  /* ნახევარი ეკრანის სიმაღლე */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible; /* აუცილებელია ანარეკლისთვის */
+  overflow: visible;
+  /* აუცილებელია ანარეკლისთვის */
   padding: 0 20px;
   border-top: 10px solid rgb(2, 255, 255);
 }
@@ -313,42 +320,46 @@ footer {
 .icon-box.facebook a {
   box-shadow: 0 0 5px var(--facebook);
 }
+
 .icon-box.facebook a:hover {
   background: var(--facebook);
   box-shadow: 0 0 5px var(--facebook),
-              0 0 25px var(--facebook),
-              0 0 50px var(--facebook),
-              0 0 200px var(--facebook);
+    0 0 25px var(--facebook),
+    0 0 50px var(--facebook),
+    0 0 200px var(--facebook);
 }
 
 /* Instagram სტილი */
 .icon-box.instagram a {
   box-shadow: 0 0 5px var(--instagram);
 }
+
 .icon-box.instagram a:hover {
   background: var(--instagram);
   box-shadow: 0 0 5px var(--instagram),
-              0 0 25px var(--instagram),
-              0 0 50px var(--instagram),
-              0 0 200px var(--instagram);
+    0 0 25px var(--instagram),
+    0 0 50px var(--instagram),
+    0 0 200px var(--instagram);
 }
 
 /* YouTube სტილი */
 .icon-box.youtube a {
   box-shadow: 0 0 5px var(--youtube);
 }
+
 .icon-box.youtube a:hover {
   background: var(--youtube);
   box-shadow: 0 0 5px var(--youtube),
-              0 0 25px var(--youtube),
-              0 0 50px var(--youtube),
-              0 0 200px var(--youtube);
+    0 0 25px var(--youtube),
+    0 0 50px var(--youtube),
+    0 0 200px var(--youtube);
 }
 
 /* scrollbar არ გამოჩნდეს მობილურზე */
 .icon-container::-webkit-scrollbar {
   display: none;
 }
+
 .icon-container {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -357,83 +368,81 @@ footer {
 
 
 /* === Media Queries — მხოლოდ მცირე ზომებისთვის === */
- @media (max-width: 1130px) {
-      .h1 {
-        margin: auto;
-        position: static;
-        font-size: 40px;
-        margin: 0;
-        margin-top: 150px;
-      }
+@media (max-width: 1130px) {
+  .h1 {
+    margin: auto;
+    position: static;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 150px;
+  }
 
-      .baner {
-        margin-top: -150px;
-      }
-    }
+  .baner {
+    margin-top: -150px;
+  }
+}
 
 @media (max-width: 1024px) {
-      .hero h2 {
-        font-size: 1.8rem;
-      }
-    }
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-      nav {
-        justify-content: center;
-      }
+  nav {
+    justify-content: center;
+  }
 
-      .hero {
-        padding: 1.5rem;
-      }
+  .hero {
+    padding: 1.5rem;
+  }
 
-      .baner {
-        margin-top: 10px;
-      }
+  .baner {
+    margin-top: 10px;
+  }
 
-      .h1 {
-        margin-top: 100px;
-      }
-    }
+  .h1 {
+    margin-top: 100px;
+  }
+}
 
-    @media (max-width: 480px) {
-      .hero h2 {
-        font-size: 1.5rem;
-      }
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
 
-      .hero p {
-        font-size: 1rem;
-      }
+  .hero p {
+    font-size: 1rem;
+  }
 
-      nav a {
-        font-size: 0.95rem;
-      }
-    }
+  nav a {
+    font-size: 0.95rem;
+  }
+}
 
-    @media (max-width: 420px) {
-      .baner {
-        margin-top: 10px;
-        margin-left: 10px;
-      }
+@media (max-width: 420px) {
+  .baner {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 
-      .h1 {
-        
-      }
-    }
+  .h1 {}
+}
 
-    @media (max-width: 360px) {
-      .baner {
-        margin-top: 10px;
-      }
+@media (max-width: 360px) {
+  .baner {
+    margin-top: 10px;
+  }
 
-      .h1 {
-        margin-top: 100px;
-      }
-    }
+  .h1 {
+    margin-top: 100px;
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -501,7 +510,7 @@ footer {
   }
 
   .sensbox {
-    
+
     max-width: 100%;
     width: 80%;
     max-width: 400px;
