@@ -268,6 +268,7 @@ header {
   --facebook: #1877f2;
   --instagram: #e4405f;
   --youtube: #ff0000;
+  --tiktok: #a259ff;
 }
 
 * {
@@ -281,28 +282,28 @@ body {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .content {
   flex: 1;
 }
 
-/* ========== FOOTER ========== */
 footer {
   margin-top: 40px;
   background: #000;
   height: 50vh;
-  /* ნახევარი ეკრანის სიმაღლე */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: visible;
-  /* აუცილებელია ანარეკლისთვის */
   padding: 0 20px;
   border-top: 10px solid rgb(2, 255, 255);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* აიქონის სტილი */
+/* აიქონის საერთო სტილი */
 .icon-box a {
   margin: 10px;
   display: inline-block;
@@ -316,11 +317,10 @@ footer {
   -webkit-box-reflect: below 5px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
 }
 
-/* Facebook სტილი */
+/* Facebook */
 .icon-box.facebook a {
   box-shadow: 0 0 5px var(--facebook);
 }
-
 .icon-box.facebook a:hover {
   background: var(--facebook);
   box-shadow: 0 0 5px var(--facebook),
@@ -329,11 +329,10 @@ footer {
     0 0 200px var(--facebook);
 }
 
-/* Instagram სტილი */
+/* Instagram */
 .icon-box.instagram a {
   box-shadow: 0 0 5px var(--instagram);
 }
-
 .icon-box.instagram a:hover {
   background: var(--instagram);
   box-shadow: 0 0 5px var(--instagram),
@@ -342,11 +341,10 @@ footer {
     0 0 200px var(--instagram);
 }
 
-/* YouTube სტილი */
+/* YouTube */
 .icon-box.youtube a {
   box-shadow: 0 0 5px var(--youtube);
 }
-
 .icon-box.youtube a:hover {
   background: var(--youtube);
   box-shadow: 0 0 5px var(--youtube),
@@ -355,15 +353,46 @@ footer {
     0 0 200px var(--youtube);
 }
 
-/* scrollbar არ გამოჩნდეს მობილურზე */
+/* TikTok */
+.icon-box.tiktok a {
+  box-shadow: 0 0 5px var(--tiktok);
+}
+.icon-box.tiktok a:hover {
+  background: var(--tiktok);
+  box-shadow: 0 0 5px var(--tiktok),
+    0 0 25px var(--tiktok),
+    0 0 50px var(--tiktok),
+    0 0 200px var(--tiktok);
+}
+
+/* scrollbar არ გამოჩნდეს */
 .icon-container::-webkit-scrollbar {
   display: none;
 }
-
 .icon-container {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* 📱 Responsive – აიქონები ჰორიზონტალურად, უბრალოდ პატარა ზომით */
+@media (max-width: 600px) {
+  footer {
+    height: 50vh; /* უცვლელი */
+    padding: 10px 15px;
+    flex-wrap: nowrap; /* აიქონები ერთ ხაზზე */
+    justify-content: center;
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .icon-box a {
+    font-size: 30px;  /* ზომა ოდნავ შემცირებული */
+    padding: 18px;     /* პადინგი შემცირებული */
+    -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0,0,0,0.3)); /* ანარეკლი */
+  }
+}
+
+
 
 
 
